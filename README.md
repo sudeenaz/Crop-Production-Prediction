@@ -141,6 +141,7 @@ Bu grafik, modelin tahmin ettiği verim değerlerini (Predicted Yield) gerçek v
 
 
 ### Linear Regression Residual Plot
+
 ![Residual LR](residual_lr.png)
 
 Bu grafik, Linear Regression modelinin tahmin hatalarının (residuals) dağılımını gösterir.
@@ -156,6 +157,7 @@ Grafikten görüldüğü gibi:
 
 
 ### Random Forest Residual Plot
+
 ![Residual RF](residual_rf.png)
 
 Bu grafik, Random Forest modelinin tahmin hatalarının dağılımını gösterir.
@@ -171,6 +173,7 @@ Grafikten görüldüğü gibi:
   
 
 ### Feature Importance
+
 ![Feature Importance](feature_importance_rf.png)
 
 Random Forest modeli, verimi etkileyen değişkenlerin önemini ölçebiliyor.
