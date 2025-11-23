@@ -131,6 +131,7 @@ Kullanılan metrikler:
 ### Scatter Plot: Actual vs Predicted
 
 ![Scatter Plot](scatter_plots.png)
+
 Bu grafik, modelin tahmin ettiği verim değerlerini (Predicted Yield) gerçek verim değerleriyle (Actual Yield) karşılaştırıyor.
 
 - Grafikteki kırmızı çizgi ideal tahmini gösterir (gerçek = tahmin).  
@@ -141,6 +142,7 @@ Bu grafik, modelin tahmin ettiği verim değerlerini (Predicted Yield) gerçek v
 
 ### Linear Regression Residual Plot
 ![Residual LR](residual_lr.png)
+
 Bu grafik, Linear Regression modelinin tahmin hatalarının (residuals) dağılımını gösterir.
 
 - **Yatay eksen:** Linear Regression modelinin tahmin ettiği değerler  
@@ -155,6 +157,7 @@ Grafikten görüldüğü gibi:
 
 ### Random Forest Residual Plot
 ![Residual RF](residual_rf.png)
+
 Bu grafik, Random Forest modelinin tahmin hatalarının dağılımını gösterir.
 
 - **Yatay eksen:** Random Forest modelinin tahmin ettiği değerler  
@@ -169,6 +172,7 @@ Grafikten görüldüğü gibi:
 
 ### Feature Importance
 ![Feature Importance](feature_importance_rf.png)
+
 Random Forest modeli, verimi etkileyen değişkenlerin önemini ölçebiliyor.
 
 - Grafikte en önemli 15 özellik gösterilmektedir.  
