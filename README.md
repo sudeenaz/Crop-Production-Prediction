@@ -22,7 +22,7 @@ Bu sayede çiftçiler ve tarım planlamacıları daha bilinçli kararlar alabili
 Veri seti: [Predict Crop Production](https://www.kaggle.com/datasets/stealthtechnologies/predict-crop-production)  
 
 Veri seti, farklı tarım alanları, toprak tipleri, gübreleme miktarları, iklim verileri ve sulama bilgilerini içermektedir.  
-Toplam kolonlar:
+Kolonlar:
 
 - Hectares  
 - Agriblock  
