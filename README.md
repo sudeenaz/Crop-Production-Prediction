@@ -74,36 +74,36 @@ Kolonlar:
 
 ## Veri Ön İşleme
 
-Veri setindeki bazı kolonlar kategorik (ör. `Agriblock`, `Variety`, `Soil Types`), bazıları sayısal ve bazıları iklim verilerini içeriyor. Veri ön işleme adımları:
+Veri setindeki kolonlar hem sayısal hem kategorik veriler içeriyor. Veri ön işleme adımları:
 
 1. **Eksik değerlerin kontrolü ve temizlenmesi**  
-   - `NaN` değerler tespit edildi ve analizde kullanılan satırlar düşürüldü (`dropna`)  
-   - Bu sayede eğitim ve test verisinde eksik veri nedeniyle hata alınmadı
+   - `NaN` değerler tespit edildi ve analizde kullanılan satırlar düşürüldü.
+   - Bu sayede eğitim ve test verisinde eksik veri nedeniyle hata alınmadı.
 
 2. **Kategorik değişkenlerin encode edilmesi**  
-   - `Agriblock`, `Variety`, `Soil Types` gibi string kolonlar **OneHotEncoder** ile sayısal hale getirildi  
-   - Bu, modellerin kategorik değişkenleri anlayabilmesini sağladı
+   - Kategorik kolonlar **OneHotEncoder** ile sayısal hale getirildi. 
+   - Bu, modellerin kategorik değişkenleri anlayabilmesini sağladı.
 
 3. **Sayısal değişkenlerin olduğu gibi bırakılması**  
-   - Hectares, Seedrate, LP_Mainfield vb. sayısal kolonlar normalize edilmeden bırakıldı  
-   - Linear Regression ve Random Forest, bu sayısal değerleri direkt kullanabilir
+   - Sayısal kolonlar normalize edilmeden bırakıldı. 
+   - Linear Regression ve Random Forest, bu sayısal değerleri direkt kullanabilir.
 
 4. **Pipeline kullanımı**  
-   - Preprocessing ve model eğitimi tek bir pipeline içinde birleştirildi  
-   - Bu sayede eğitim ve test seti üzerindeki tüm işlemler otomatikleşti  
+   - Preprocessing ve model eğitimi tek bir pipeline içinde birleştirildi.  
+   - Bu sayede eğitim ve test seti üzerindeki tüm işlemler otomatikleşti.  
 
 ---
 
 ## Kullanılan Modeller
 
 ### 1. Linear Regression
-- Basit ve yorumlanabilir regresyon modeli  
-- Amaç: Bağımsız değişkenler ile verim arasındaki doğrusal ilişkiyi modellemek  
+- Basit ve yorumlanabilir regresyon modeli.  
+- Amaç: Bağımsız değişkenler ile verim arasındaki doğrusal ilişkiyi modellemek.  
 
 ### 2. Random Forest Regression
-- Ensemble (çoklu karar ağacı) yöntemi ile tahmin yapar  
-- Lineer olmayan ilişkileri yakalayabilir  
-- Feature importance çıkarılabilir → üretimi etkileyen başlıca faktörler belirlenebilir  
+- Ensemble (çoklu karar ağacı) yöntemi ile tahmin yapar.  
+- Lineer olmayan ilişkileri yakalayabilir.  
+- Feature importance çıkarılabilir → üretimi etkileyen başlıca faktörler belirlenebilir.  
 
 ---
 
@@ -186,11 +186,4 @@ Random Forest modeli, verimi etkileyen değişkenlerin önemini ölçebiliyor.
 - Bu sayede üretimi etkileyen kritik faktörleri görsel olarak da yorumlayabiliyoruz.
 
 ---
-
-## Kullanım Talimatları
-
-1. Notebook’u açın: `crop_production_analysis.ipynb`  
-2. Gerekli kütüphaneleri yükleyin:  
-```bash
-!pip install pandas numpy scikit-learn matplotlib seaborn
 
