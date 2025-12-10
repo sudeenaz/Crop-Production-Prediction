@@ -25,14 +25,6 @@ Hedef değişken: **Paddy yield(in Kg)**
 
 ---
 
-## Kullanılan Modeller
-
-- **Linear Regression**  
-- **Random Forest Regressor**  
-- **Support Vector Regression (SVR)**
-
----
-
 ## Model Performans
 
 | Model | MAE | RMSE | R² Score |
@@ -40,6 +32,45 @@ Hedef değişken: **Paddy yield(in Kg)**
 | Linear Regression | 698.32 | 927.94 | 0.9894 |
 | Random Forest | 512.34 | 678.45 | 0.9952 |
 | SVR | 3685.245102 | 5262.527620 | 0.658560 |
+
+---
+## Sonuç ve Model Karşılaştırması
+Bu çalışmada Paddy Yield (Kg) değerini tahmin etmek için üç farklı supervised (denetimli) makine öğrenimi modeli kullanılmıştır:
+
+- **Linear Regression**  
+- **Random Forest Regressor**  
+- **Support Vector Regression (SVR)**
+
+Her model aynı eğitim/test veri seti üzerinde değerlendirilmiş ve performansları MAE, RMSE ve R² Score metrikleriyle karşılaştırılmıştır.
+
+Genel Değerlendirme
+
+Analiz sonuçlarına göre en başarılı model Random Forest Regressor olmuştur. Bunun temel sebepleri şunlardır:
+
+Doğrusal olmayan ilişkileri iyi öğrenir.
+Paddy verimi; toprak nemi, sıcaklık, gübre miktarı, çevresel faktörler gibi birçok değişkenin doğrusal olmayan kombinasyonlarından etkilenir. Linear Regression bu karmaşıklığı yakalayamazken, Random Forest yakalayabilir.
+
+Aykırı değerlere karşı dayanıklıdır.
+Tarımsal verilerde ölçüm hataları / uç değerler sık görülür. Random Forest bu tarz gürültülü verilerde daha stabil çalışır.
+
+Özellikler arasında etkileşimleri otomatik öğrenir.
+Random Forest, özellikler arasındaki karmaşık ilişkileri ağaç yapıları sayesinde doğal olarak yakalayabilir.
+
+Overfitting’i azaltan bir topluluk yöntemidir.
+Tek bir karar ağacı aşırı öğrenmeye meyilliyken, çoklu ağaçlardan oluşan Random Forest genel performansı iyileştirir.
+
+## Model Performanslarının Yorumlanması
+
+Aşağıdaki metriklerde daha düşük MAE/RMSE ve daha yüksek R² daha iyidir.
+
+## Linear Regression:
+Basit bir doğrusal model olduğu için karmaşık değişken ilişkilerini tam olarak yakalayamamış ve en düşük performansı göstermiştir.
+
+## SVR:
+Orta seviyede performans göstermiştir. Küçük / orta büyüklükteki veri setlerinde etkili olsa da hiperparametre ayarı yapılmadığında doğruluğu sınırlı kalabilir.
+
+## Random Forest:
+En yüksek R² ve en düşük RMSE değerini elde ederek en başarılı model olmuştur.
 
 ---
 
