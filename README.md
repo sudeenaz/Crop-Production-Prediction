@@ -82,6 +82,7 @@ Hedef değişken: **Paddy yield(in Kg)**
 | SVR | 3685.245102 | 5262.527620 | 0.658560 |
 
 ---
+
 ## Sonuç ve Model Karşılaştırması
 Bu çalışmada Paddy Yield (Kg) değerini tahmin etmek için üç farklı supervised (denetimli) makine öğrenimi modeli kullanılmıştır:
 
@@ -90,6 +91,23 @@ Bu çalışmada Paddy Yield (Kg) değerini tahmin etmek için üç farklı super
 - **Support Vector Regression (SVR)**
 
 Her model aynı eğitim/test veri seti üzerinde değerlendirilmiş ve performansları MAE, RMSE ve R² Score metrikleriyle karşılaştırılmıştır.
+
+---
+
+## Model Performanslarının Yorumlanması
+
+Aşağıdaki metriklerde daha düşük MAE/RMSE ve daha yüksek R² daha iyidir.
+
+**Linear Regression**  
+Basit bir doğrusal model olduğu için karmaşık değişken ilişkilerini tam olarak yakalayamamış ve en düşük performansı göstermiştir.
+
+**Support Vector Regression (SVR)**
+Orta seviyede performans göstermiştir. Küçük / orta büyüklükteki veri setlerinde etkili olsa da hiperparametre ayarı yapılmadığında doğruluğu sınırlı kalabilir.
+
+**Random Forest Regressor**  
+En yüksek R² ve en düşük RMSE değerini elde ederek en başarılı model olmuştur.
+
+---
 
 ## Genel Değerlendirme
 
@@ -106,19 +124,6 @@ Random Forest, özellikler arasındaki karmaşık ilişkileri ağaç yapıları 
 
 Overfitting’i azaltan bir topluluk yöntemidir.
 Tek bir karar ağacı aşırı öğrenmeye meyilliyken, çoklu ağaçlardan oluşan Random Forest genel performansı iyileştirir.
-
-## Model Performanslarının Yorumlanması
-
-Aşağıdaki metriklerde daha düşük MAE/RMSE ve daha yüksek R² daha iyidir.
-
-**Linear Regression**  
-Basit bir doğrusal model olduğu için karmaşık değişken ilişkilerini tam olarak yakalayamamış ve en düşük performansı göstermiştir.
-
-**Support Vector Regression (SVR)**
-Orta seviyede performans göstermiştir. Küçük / orta büyüklükteki veri setlerinde etkili olsa da hiperparametre ayarı yapılmadığında doğruluğu sınırlı kalabilir.
-
-**Random Forest Regressor**  
-En yüksek R² ve en düşük RMSE değerini elde ederek en başarılı model olmuştur.
 
 ---
 
