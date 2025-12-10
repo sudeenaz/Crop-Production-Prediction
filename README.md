@@ -19,7 +19,7 @@ Tarımda verim tahmini, kaynak yönetimi ve üretim planlaması açısından kri
 
 Veri seti: [Predict Crop Production (Kaggle)](https://www.kaggle.com/datasets/stealthtechnologies/predict-crop-production)
 
-Veri seti farklı tarımsal ve iklimsel değişkenler içerir (sütunlar README içinde listelenmişti).
+Veri seti farklı tarımsal ve iklimsel değişkenler içerir.
 
 Hedef değişken: **Paddy yield(in Kg)**
 
@@ -33,15 +33,13 @@ Hedef değişken: **Paddy yield(in Kg)**
 
 ---
 
-## Model Performans (Özet)
+## Model Performans
 
 | Model | MAE | RMSE | R² Score |
 |-------|-----:|------:|--------:|
 | Linear Regression | 698.32 | 927.94 | 0.9894 |
 | Random Forest | 512.34 | 678.45 | 0.9952 |
-| SVR | _yerine_svr_mae_koy_ | _yerine_svr_rmse_koy_ | _yerine_svr_r2_koy_ |
-
-> Not: SVR skorlarını Colab’da çalıştırdıktan sonra tabloya gerçek değerleri yaz.
+| SVR | 3685.245102 | 5262.527620 | 0.658560 |
 
 ---
 
@@ -67,7 +65,7 @@ Hedef değişken: **Paddy yield(in Kg)**
 
 ---
 
-## Açıklamalar (Kısa)
+## Açıklamalar
 
 - Scatter plot gerçek ve tahmin edilen değerleri karşılaştırır; ideal doğrultu çizgisi gösterilmiştir.  
 - Residual plot’lar model hatalarının dağılımını gösterir; simetrik ve dar dağılım iyi performansı işaret eder.  
