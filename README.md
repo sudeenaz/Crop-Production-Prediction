@@ -21,53 +21,53 @@ Bu sayede çiftçiler ve tarım planlamacıları daha bilinçli kararlar alabili
 Veri seti: [Predict Crop Production (Kaggle)](https://www.kaggle.com/datasets/stealthtechnologies/predict-crop-production)
 
 Veri seti, farklı tarım alanları, toprak tipleri, gübreleme miktarları, iklim verileri ve sulama bilgilerini içermektedir.
-Kolonlar:
 
-Hectares
-Agriblock
-Variety
-Soil Types
-Seedrate(in Kg)
-LP_Mainfield(in Tonnes)
-Nursery
-Nursery area (Cents)
-LP_nurseryarea(in Tonnes)
-DAP_20days
-Weed28D_thiobencarb
-Urea_40Days
-Potassh_50Days
-Micronutrients_70Days
-Pest_60Day(in ml)
-30DRain( in mm)
-30DAI(in mm)
-30_50DRain( in mm)
-30_50DAI(in mm)
-51_70DRain(in mm)
-51_70AI(in mm)
-71_105DRain(in mm)
-71_105DAI(in mm)
-Min temp_D1_D30
-Max temp_D1_D30
-Min temp_D31_D60
-Max temp_D31_D60
-Min temp_D61_D90
-Max temp_D61_D90
-Min temp_D91_D120
-Max temp_D91_D120
-Inst Wind Speed_D1_D30(in Knots)
-Inst Wind Speed_D31_D60(in Knots)
-Inst Wind Speed_D61_D90(in Knots)
-Inst Wind Speed_D91_D120(in Knots)
-Wind Direction_D1_D30
-Wind Direction_D31_D60
-Wind Direction_D61_D90
-Wind Direction_D91_D120
-Relative Humidity_D1_D30
-Relative Humidity_D31_D60
-Relative Humidity_D61_D90
-Relative Humidity_D91_D120
-Trash(in bundles)
-Paddy yield(in Kg) (Hedef değişken)
+Kolonlar:
+- Hectares
+- Agriblock
+- Variety
+- Soil Types
+- Seedrate (in Kg)
+- LP_Mainfield (in Tonnes)
+- Nursery
+- Nursery area (Cents)
+- LP_nurseryarea (in Tonnes)
+- DAP_20days
+- Weed28D_thiobencarb
+- Urea_40Days
+- Potassh_50Days
+- Micronutrients_70Days
+- Pest_60Day (in ml)
+- 30DRain (in mm)
+- 30DAI (in mm)
+- 30_50DRain (in mm)
+- 30_50DAI (in mm)
+- 51_70DRain (in mm)
+- 51_70AI (in mm)
+- 71_105DRain (in mm)
+- 71_105DAI (in mm)
+- Min temp_D1_D30
+- Max temp_D1_D30
+- Min temp_D31_D60
+- Max temp_D31_D60
+- Min temp_D61_D90
+- Max temp_D61_D90
+- Min temp_D91_D120
+- Max temp_D91_D120
+- Inst Wind Speed_D1_D30 (in Knots)
+- Inst Wind Speed_D31_D60 (in Knots)
+- Inst Wind Speed_D61_D90 (in Knots)
+- Inst Wind Speed_D91_D120 (in Knots)
+- Wind Direction_D1_D30
+- Wind Direction_D31_D60
+- Wind Direction_D61_D90
+- Wind Direction_D91_D120
+- Relative Humidity_D1_D30
+- Relative Humidity_D31_D60
+- Relative Humidity_D61_D90
+- Relative Humidity_D91_D120
+- Trash (in bundles)
+- Paddy yield (in Kg) — Target variable
 
 Hedef değişken: **Paddy yield(in Kg)**
 
