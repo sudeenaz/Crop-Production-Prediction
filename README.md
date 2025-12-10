@@ -43,7 +43,7 @@ Bu çalışmada Paddy Yield (Kg) değerini tahmin etmek için üç farklı super
 
 Her model aynı eğitim/test veri seti üzerinde değerlendirilmiş ve performansları MAE, RMSE ve R² Score metrikleriyle karşılaştırılmıştır.
 
-Genel Değerlendirme
+## Genel Değerlendirme
 
 Analiz sonuçlarına göre en başarılı model Random Forest Regressor olmuştur. Bunun temel sebepleri şunlardır:
 
@@ -63,13 +63,13 @@ Tek bir karar ağacı aşırı öğrenmeye meyilliyken, çoklu ağaçlardan olu�
 
 Aşağıdaki metriklerde daha düşük MAE/RMSE ve daha yüksek R² daha iyidir.
 
-## Linear Regression:
+**Linear Regression**  
 Basit bir doğrusal model olduğu için karmaşık değişken ilişkilerini tam olarak yakalayamamış ve en düşük performansı göstermiştir.
 
-## SVR:
+**Support Vector Regression (SVR)**
 Orta seviyede performans göstermiştir. Küçük / orta büyüklükteki veri setlerinde etkili olsa da hiperparametre ayarı yapılmadığında doğruluğu sınırlı kalabilir.
 
-## Random Forest:
+**Random Forest Regressor**  
 En yüksek R² ve en düşük RMSE değerini elde ederek en başarılı model olmuştur.
 
 ---
