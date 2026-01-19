@@ -130,22 +130,22 @@ Tek bir karar ağacı aşırı öğrenmeye meyilliyken, çoklu ağaçlardan olu�
 ## Grafikler
 
 ### Model Karşılaştırması (R²)
-![Model Karşılaştırması (R2)](model_comparison_r2.png)
+![Model Karşılaştırması (R2)](images/model_comparison_r2.png)
 
 ### Random Forest — Gerçek vs Tahmin
-![Random Forest - Gerçek vs Tahmin](rf_actual_vs_pred.png)
+![Random Forest - Gerçek vs Tahmin](images/rf_actual_vs_pred.png)
 
 ### Linear Regression - Residual Dağılımı
-![Residual LR](residual_lr.png)
+![Residual LR](images/residual_lr.png)
 
 ### Random Forest - Residual Dağılımı
-![Residual RF](residual_rf.png)
+![Residual RF](images/residual_rf.png)
 
 ### Random Forest - Feature Importance (Top 15)
-![Feature Importance](feature_importance_rf.png)
+![Feature Importance](images/feature_importance_rf.png)
 
 ### SVR - Hata Dağılımı
-![SVR Errors](svr_errors.png)
+![SVR Errors](images/svr_errors.png)
 
 ---
 
